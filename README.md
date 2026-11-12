@@ -1,11 +1,30 @@
-<div align="center">
+# نگاه مربی (Negah Coach)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+اپلیکیشن آفلاین اندرویدی برای مدیریت حلقه تربیتی توسط مربی.
 
-  <h1>Built with AI Studio</h2>
+## وضعیت پروژه
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+پروژه به‌صورت مستقل و از پایه توسعه داده می‌شود. مخزن قدیمی AK1 منبع وابستگی یا کد این پروژه نیست.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## معماری مصوب
 
-</div>
+- Kotlin + Jetpack Compose
+- Multi-module Gradle
+- Clean Architecture + UDF
+- Hilt برای Dependency Injection
+- Room / SQLite برای ذخیره‌سازی محلی
+- WorkManager برای کارهای پس‌زمینه
+- پشتیبان‌گیری رمزگذاری‌شده با حداکثر دو نسخه در پوشه MRT
+- توسعه مرحله‌ای و حفظ تاریخچه و یکپارچگی داده‌ها
+
+## دامنه نسخه فعلی
+
+اپلیکیشن مربی، آفلاین‌محور و حلقه‌محور است. حساب ابری، همگام‌سازی، backend و اپ عضو خارج از دامنه این نسخه هستند.
+
+## اصول توسعه
+
+1. هر قابلیت با تست و کنترل کیفیت تحویل می‌شود.
+2. UI مستقیماً به دیتابیس یا منطق کسب‌وکار وابسته نمی‌شود.
+3. Migrationها باید داده‌های موجود را حفظ کنند.
+4. عملیات حساس باید اتمیک و قابل ردیابی باشند.
+5. هر تغییر معماری باید در مرز ماژول روشن انجام شود.
